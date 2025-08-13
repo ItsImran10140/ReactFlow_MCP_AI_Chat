@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import { AppSidebar } from "@/components/app-sidebar";
+import { AppSidebar } from "@/UI/app-sidebar";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -10,14 +10,10 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import { Separator } from "@/components/ui/separator";
-import {
-  SidebarInset,
-  SidebarProvider,
-  SidebarTrigger,
-} from "@/components/ui/sidebar";
-import { Button } from "@/components/ui/button";
+} from "@/UI/ui/breadcrumb";
+import { Separator } from "@/UI/ui/separator";
+import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/UI/ui/sidebar";
+import { Button } from "@/UI/ui/button";
 import {
   addEdge,
   Background,
@@ -30,10 +26,10 @@ import {
   Connection,
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
-import { nodeTypes } from "@/app/nodes";
+import { nodeTypes } from "@/app/components/nodes/index";
 import { graph } from "@/core/DependencyGraph";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { DropdownMenuDemo } from "@/components/DropdownMenu/DropDownMenu";
+import { DropdownMenuDemo } from "@/UI/DropdownMenu/DropDownMenu";
 import { CiSettings } from "react-icons/ci";
 import { CheckCircle2, Download, Play, RotateCcw } from "lucide-react";
 
